@@ -16,8 +16,8 @@ body {
 }
 
 header {
-    width: 800px; /* 设置宽度为760px */
-    max-width: 100%;
+    width: 100%; /* 设置宽度为100% */
+    max-width: 800px; /* 确保在大屏幕上最大宽度 */
     text-align: center;
     display: flex;
     justify-content: center; /* 水平居中 */
@@ -47,8 +47,8 @@ header .banner h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 760px; /* 设置宽度为760px */
-    max-width: 100%;
+    width: 100%; /* 设置宽度为100% */
+    max-width: 760px; /* 确保在大屏幕上最大宽度 */
     background: url('../images/background2.jpg') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
@@ -72,11 +72,11 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px; /* 在小屏幕上增加间距 */
+    margin: 5px; /* 在小屏幕上增加间距 */
 }
 
 .big-text {
-    font-size: 9em;
+    font-size: 7em;
     margin: 0;
 }
 
@@ -89,8 +89,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 760px; /* 设置宽度为760px */
-    max-width: 100%;
+    width: 100%; /* 设置宽度为100% */
+    max-width: 760px; /* 确保在大屏幕上最大宽度 */
     background: url('../images/background_raw.png') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
@@ -159,8 +159,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 760px; /* 设置宽度为760px */
-    max-width: 100%;
+    width: 100%; /* 设置宽度为100% */
+    max-width: 760px; /* 确保在大屏幕上最大宽度 */
     background: url('../images/background_raw.png') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
