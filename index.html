@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好哇</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/timer.js" defer></script>
+    <script src="scripts/header-date.js" defer></script> 
+    <script src="scripts/message-board.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="currentDate"></h1>
+    </header>
+
+    <div class="container">
+        <h3>Our Story</h3>
+        <div class="countdown-container">
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>days</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>hours</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>mins</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>secs</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="message-board" class="message-container">
+        <h2>留言板</h2>
+        <textarea id="messageInput" placeholder="在这里写下你的留言..." rows="4" cols="50"></textarea>
+        <br>
+        <button onclick="addMessage()">添加留言</button>
+        <div id="messages">
+            <div class="message">
+                <p class="message-text">这是一条示例消息</p>
+                <div class="message-buttons">
+                    <button class="like-button">👍</button>
+                    <button class="dislike-button">👎</button>
+                    <button>修改</button>
+                    <button>删除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- music -->
+    <div id="music-player" class="music-container">
+        <p>Music Time！</p>
+        <audio controls>
+            <source src="music/lovestory.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+</body>
+</html>
