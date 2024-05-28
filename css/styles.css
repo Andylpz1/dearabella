@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    width: 760px; /* 设置宽度为760px */
+    width: 800px; /* 设置宽度为760px */
     max-width: 100%;
     text-align: center;
     display: flex;
