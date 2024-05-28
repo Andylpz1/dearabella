@@ -18,24 +18,27 @@ body {
 header {
     width: 100%; /* 确保宽度为100% */
     text-align: center;
+    display: flex;
+    justify-content: center; /* 水平居中 */
 }
 
 header .banner {
     background: url('../images/title_june.png') no-repeat center center;
     background-size: contain; /* 保持比例 */
     width: 100%;
+    max-width: 800px; /* 确保最大宽度 */
     height: 150px; /* 设置明确的高度 */
     color: white;
     text-align: center;
-    position: relative;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
 }
 
 header .banner h1 {
-    line-height: 150px; /* 让标题在150px高的header中垂直居中 */
     margin: 0;
     font-size: 6em;
     color: #81d4fa;
-    padding-top: 2px;
 }
 
 .container {
@@ -43,7 +46,8 @@ header .banner h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 760px; /* 设置宽度为760px */
+    width: 90%; /* 设置宽度为90%，适应不同屏幕宽度 */
+    max-width: 760px; /* 设置最大宽度 */
     background: url('../images/background2.jpg') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
@@ -60,12 +64,14 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap; /* 确保在小屏幕上换行 */
 }
 
 .countdown-el {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px; /* 在小屏幕上增加间距 */
 }
 
 .big-text {
@@ -82,7 +88,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 760px; /* 设置宽度为760px */
+    width: 90%; /* 设置宽度为90%，适应不同屏幕宽度 */
+    max-width: 760px; /* 设置最大宽度 */
     background: url('../images/background_raw.png') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
@@ -151,7 +158,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 760px; /* 设置宽度为760px */
+    width: 90%; /* 设置宽度为90%，适应不同屏幕宽度 */
+    max-width: 760px; /* 设置最大宽度 */
     background: url('../images/background_raw.png') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
@@ -172,4 +180,22 @@ h2 {
     text-align: center; /* 确保音频播放器居中 */
 }
 
+/* 添加媒体查询以确保在小屏幕上样式正确 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em; /* 调整标题字体大小 */
+    }
+
+    h3, h2, .countdown-el span, .big-text {
+        font-size: 2em; /* 调整字体大小以适应移动设备 */
+    }
+
+    .container, .music-container, .message-container {
+        padding: 10px;
+    }
+
+    .message-text {
+        font-size: 1em;
+    }
+}
 
