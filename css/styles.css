@@ -16,17 +16,18 @@ body {
 }
 
 header {
-    width: 100%; /* 确保宽度为100% */
+    width: 760px; /* 设置宽度为760px */
+    max-width: 100%;
     text-align: center;
     display: flex;
     justify-content: center; /* 水平居中 */
+    margin: 20px auto; /* 确保在屏幕中间 */
 }
 
 header .banner {
     background: url('../images/title_june.png') no-repeat center center;
     background-size: contain; /* 保持比例 */
     width: 100%;
-    max-width: 800px; /* 确保最大宽度 */
     height: 150px; /* 设置明确的高度 */
     color: white;
     text-align: center;
@@ -46,12 +47,12 @@ header .banner h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90%; /* 设置宽度为90%，适应不同屏幕宽度 */
-    max-width: 760px; /* 设置最大宽度 */
+    width: 760px; /* 设置宽度为760px */
+    max-width: 100%;
     background: url('../images/background2.jpg') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
-    margin: 20px auto; /* 使容器居中 */
+    margin: 20px auto; /* 确保在屏幕中间 */
     border-radius: 10px; /* 圆角 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
 }
@@ -88,12 +89,12 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90%; /* 设置宽度为90%，适应不同屏幕宽度 */
-    max-width: 760px; /* 设置最大宽度 */
+    width: 760px; /* 设置宽度为760px */
+    max-width: 100%;
     background: url('../images/background_raw.png') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
-    margin: 20px auto; /* 使容器居中 */
+    margin: 20px auto; /* 确保在屏幕中间 */
     border-radius: 10px; /* 圆角 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
 }
@@ -158,12 +159,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90%; /* 设置宽度为90%，适应不同屏幕宽度 */
-    max-width: 760px; /* 设置最大宽度 */
+    width: 760px; /* 设置宽度为760px */
+    max-width: 100%;
     background: url('../images/background_raw.png') no-repeat center center; /* 设置背景图片 */
     background-size: cover; /* 保持背景图片比例 */
     padding: 20px; /* 添加内边距 */
-    margin: 20px auto; /* 使容器居中 */
+    margin: 20px auto; /* 确保在屏幕中间 */
     border-radius: 10px; /* 圆角 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
 }
